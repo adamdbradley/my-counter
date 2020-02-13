@@ -1,4 +1,4 @@
-# Stencil Filesize Measurements
+# StencilJS Size Analysis
 
 ## Bundle size of 1 component without library bundled
 

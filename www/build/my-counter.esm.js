@@ -1,1 +1,1 @@
-import{p as s,b as c}from"./p-636ca389.js";s().then(s=>c([["p-1ssc85qh",[[1,"my-counter",{count:[32]}]]]],s));
+import{p as o,b as c}from"./core-99f62c26.js";o().then(o=>c([["my-counter",[[1,"my-counter",{count:[32]}]]]],o));

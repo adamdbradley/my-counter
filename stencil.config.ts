@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'my-counter',
+  hashFileNames: false,
   outputTargets: [
     {
       type: 'dist',

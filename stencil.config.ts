@@ -15,5 +15,12 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null // disable service workers
     }
-  ]
+  ],
+  hydratedFlag: null,
+  extras: {
+    cssVarsShim: false,
+    dynamicImportShim: false,
+    safari10: false,
+    shadowDomShim: false,
+  }
 };

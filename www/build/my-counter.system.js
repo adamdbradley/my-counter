@@ -1,1 +1,0 @@
-System.register(["./core-64492bec.system.js"],(function(){"use strict";var t,e;return{setters:[function(n){t=n.p;e=n.b}],execute:function(){t().then((function(t){return e([["my-counter.system",[[1,"my-counter",{count:[32]}]]]],t)}))}}}));

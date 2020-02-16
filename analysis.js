@@ -1,12 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const gzipSize = require('gzip-size');
-const Terser = require('terser');
 const stencilPkg = require(require.resolve('@stencil/core/package.json'));
 const readmeSrc = path.join(__dirname, 'readme.md');
 
 const buildFilesDir = path.join(__dirname, 'www', 'build');
-const customElementsBundle = path.join(__dirname, 'dist', 'custom-elements-bundle', 'index.mjs');
 const buildFiles = fs.readdirSync(buildFilesDir);
 
 const cmpFile = 'my-counter.entry.js';
@@ -14,14 +12,8 @@ const libFile = buildFiles.find(f => {
   return f.startsWith('index-') && !f.endsWith('.system.js')
 });
 
-const bundleCode = fs.readFileSync(customElementsBundle, 'utf8');
-const bundleMinifyResult = Terser.minify(bundleCode, {
-  compress: {
-    module: true,
-    toplevel: true,
-  }
-});
-const bundleSize = gzipSize.sync(bundleMinifyResult.code);
+const customElementsBundle = path.join(__dirname, 'dist', 'custom-elements-bundle', 'index.mjs');
+const bundleSize = gzipSize.fileSync(customElementsBundle);
 
 const cmpSize = gzipSize.fileSync(path.join(buildFilesDir, cmpFile));
 const libSize = gzipSize.fileSync(path.join(buildFilesDir, libFile));

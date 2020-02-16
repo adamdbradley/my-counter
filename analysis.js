@@ -23,12 +23,12 @@ const libCmpSize = libSize + cmpSize;
 const cmp30Size = cmpSize * 30;
 const libCmp30Size = cmp30Size + libSize;
 
-console.log(`💎  Version: ${stencilPkg.version}`);
-console.log(`👾  Component: ${cmpSize}b`);
-console.log(`🎸  Library: ${libSize}b`);
-console.log(`🍕  Cmp + Lib: ${libCmpSize}b`);
-console.log(`🦄  Cmp * 30: ${cmp30Size}b`);
-console.log(`🦄  (Cmp * 30) + Lib: ${libCmp30Size}b`);
+console.log(`💎  ${stencilPkg.name}      ${stencilPkg.version}`);
+console.log(`👾  Component          ${cmpSize}`);
+console.log(`🎸  Library            ${libSize}`);
+console.log(`🍕  (Cmp + Lib)        ${libCmpSize}`);
+console.log(`🌈  (Cmp * 30)         ${cmp30Size}`);
+console.log(`🦄  (Cmp * 30) + Lib   ${libCmp30Size}`);
 console.log('');
 
 

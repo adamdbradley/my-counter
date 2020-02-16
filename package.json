@@ -16,8 +16,9 @@
   ],
   "scripts": {
     "analysis": "node analysis.js",
-    "build": "stencil build --docs --next",
-    "start": "stencil build --dev --watch --serve",
+    "build": "stencil build --docs --next && npm run analysis",
+    "build.dev": "stencil build --dev --next",
+    "start": "stencil build --dev --next --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"

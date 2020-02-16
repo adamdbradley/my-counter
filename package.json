@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@stencil/core": "^1.9.0-16",
-    "gzip-size": "^5.1.1"
+    "gzip-size": "^5.1.1",
+    "terser": "^4.6.3"
   }
 }

@@ -34,7 +34,7 @@ console.log(`👾  Component          ${cmpSize}`);
 console.log(`🎸  Library            ${libSize}`);
 console.log(`🍕  (Cmp + Lib)        ${libCmpSize}`);
 console.log(`🌈  (Cmp * 30)         ${cmp30Size}`);
-console.log(`🦄  (Cmp * 30) + Lib   ${libCmp30Size}`);
+console.log(`🤖  (Cmp * 30) + Lib   ${libCmp30Size}`);
 console.log(`🦄  Bundle             ${bundleSize}`);
 console.log('');
 
